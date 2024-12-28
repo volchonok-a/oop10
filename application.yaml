@@ -1,0 +1,37 @@
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/task_db
+#    username: postgres
+#    password: 1234
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+#    hibernate:
+#      ddl-auto: update
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/task_db
+#    driver-class-name: org.postgresql.Driver
+#    password: 1234
+#    username: postgres
+#    jpa:
+#      hibernate:
+#        ddl-auto: validate
+#      properties:
+#        hibernate:
+#          jdbc.batch_size: 100
+#          order_inserts: true
+#          order_updates: true
+#          batch_versioned_data: true
+#          dialect: org.hibernate.dialect.PostgreSQLDialect
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_db
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
